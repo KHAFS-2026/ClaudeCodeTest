@@ -35,6 +35,8 @@ Each game is a **single self-contained HTML file** — all HTML, CSS, and JavaSc
 
 ### shooter.html
 
+After any change to this file, commit and push immediately before moving on.
+
 Canvas-based top-down space shooter. Key sections inside the `<script>` block (marked with `// === SECTION ===` banners):
 
 - **STATE** — `gameState` string (`'start' | 'playing' | 'gameover'`), wave number, score, all entity arrays
@@ -47,6 +49,8 @@ Canvas-based top-down space shooter. Key sections inside the `<script>` block (m
 Enemy movement is Space Invaders-style: a shared `waveVx` flips sign when the leading enemy hits a wall, dropping all enemies 20 px. High score persists via `localStorage`.
 
 ### tictactoe.html
+
+After any change to this file, commit and push immediately before moving on.
 
 DOM-based, no canvas. State is a flat 9-element `board` array. `init()` resets state and rebuilds cells; `handleClick(i)` applies a move, calls `checkWin()`, and updates scores. Scores survive across games in the `scores` object but are not persisted to storage.
 
